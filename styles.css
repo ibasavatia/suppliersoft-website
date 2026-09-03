@@ -157,3 +157,28 @@ footer{padding:44px 0 40px;border-top:1px solid var(--line);margin-top:8px}
   .flow{grid-template-columns:1fr;gap:12px;max-width:440px}
   .flow-arrow{justify-self:center;transform:rotate(90deg)}
 }
+
+/* ===== compact form pages (contact / demo) ===== */
+.form-page{padding:32px 0 40px}
+.form-split{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
+.form-intro h1{font-size:clamp(1.7rem,3vw,2.3rem);margin-top:8px;max-width:14ch}
+.form-intro .lead{color:var(--muted);margin-top:12px;font-size:1.02rem;max-width:44ch}
+.form-intro .contact-lines{margin-top:20px}
+.form-intro .contact-lines p{margin-bottom:6px;font-size:.95rem;color:var(--text)}
+.form-card{padding:28px 28px}
+.form-card form{gap:11px}
+.form-card h2{max-width:none;font-size:1.35rem}
+.form-card .sub{margin-bottom:16px;color:#A7BCC1}
+@media(max-width:860px){.form-split{grid-template-columns:1fr;gap:22px}.form-intro h1{max-width:none}}
+
+/* ===== "lean" pages: fit forms on one screen ===== */
+body.lean nav{height:74px}
+body.lean .logo img{height:50px}
+body.lean .form-page{padding:18px 0 18px}
+body.lean .crumb{margin-bottom:12px}
+body.lean .form-card{padding:24px 26px}
+body.lean .form-card form{gap:10px}
+body.lean .form-intro .lead{margin-top:10px}
+body.lean .form-intro .contact-lines{margin-top:16px}
+body.lean footer{padding:20px 0 22px;margin-top:0}
+body.lean .hero{padding:32px 0}
